@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+body{
+    box-sizing: border-box;
+
+ 
+    
+}
+   
+header {
+
+    display: flex;
+   justify-content: space-between;
+   background-color: rgb(128, 128, 153);
+height: 10rem;
+width: 100%;
+
+
+   .logo {
+       margin-left: 2rem;
+       margin-top: 1.5rem;
+   }
+
+   .toggle {
+       margin-right: 2rem;
+       margin-top: 1.5rem;
+ i{
+     display: hidden;
+ }
+   }
+
+   .toggle ul li{
+    
+  display: inline-block;
+  list-style: none;
+  text-align:center ;
+
+
+  
+   }
+   .toggle ul li a{
+       text-align: center;
+       text-decoration: none;
+    display: block;    
+    padding: 2rem ;
+    font-size: 2rem;
+     }
+
+     .toggle ul li a:hover {
+         background-color:  rgb(97, 97, 104);
+     }
+
+
+}
+
+
+
+
+.bars{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+
+.bar{
+    width: 100%;
+    margin: 2% auto;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
+}
+
+
+
+@media (max-width:500px) {
+    
+    header {
+        height: auto;
+    }
+.bars{
+    display:flex;
+}
+
+.toggle {
+   display: none;
+   width: 40%;
+   background-color: black;
+   position: relative;
+   right: -10rem;
+   height: 100%;
+   top: 1rem;
+   padding: 0;
+   transition: margin-bottom 2s ease-in-out;
+   i{
+       display: flex;
+      font-size: 3rem;
+       text-align: center;
+       color: white;
+       position: absolute;
+       display: block;
+       text-align: center;
+       margin-bottom: 1rem;
+
+   }
+}
+
+.toggle ul li  {
+    margin-top: 2rem;
+    width:100%;
+    flex-direction: column;
+
+}
+ .active {
+    display: flex;
+    position: absolute;
+    right: -2rem;
+    top:-1.5rem;
+}
+
+
+}
